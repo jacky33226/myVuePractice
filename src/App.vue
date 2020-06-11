@@ -1,13 +1,18 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <router-view></router-view>
+<!--    <markdown-editor></markdown-editor>-->
   </div>
 </template>
 
 <script>
+  import MarkdownEditor from '@/components/MarkdownEditor'
 export default {
-  name: 'App'
+  name: 'App',
+  // components:{
+  //   MarkdownEditor
+  // }
 }
 </script>
 
