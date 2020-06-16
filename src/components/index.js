@@ -111,7 +111,7 @@ const components = {
 }
 Object.values(components).forEach(i => {
   Vue.use(i)
-  console.log(i)
+  // console.log(i)
 })
 Vue.prototype.$confirm = MessageBox.confirm
 Vue.prototype.$alert = MessageBox.alert

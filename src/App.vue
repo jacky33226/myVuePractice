@@ -24,8 +24,12 @@
       <el-menu-item index="3" disabled>消息中心</el-menu-item>
       <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
     </el-menu>
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+
+<!--    <img src="./assets/logo.png" class="blur mask">-->
+<!--    <img src="./assets/logo.png" class="blurandmask">-->
+    <br/><br/><br/>
+
+    <router-view name="CssTest"></router-view>
 <!--    <markdown-editor></markdown-editor>-->
   </div>
 </template>
@@ -63,4 +67,26 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+/*   */
+.blur{
+  -webkit-filter: blur(5px); /* Chrome, Opera */
+  -moz-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.mask{
+
+  background:rgba(0,0,0,.3);
+  /*background:hsla(0,100%,80%,0.5)*/
+  /*background:#000; opacity:0.5; */
+}
+  .blurandmask:hover{
+    -webkit-filter: blur(5px); /* Chrome, Opera */
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    background:rgba(0,0,0,.1);
+  }
 </style>
